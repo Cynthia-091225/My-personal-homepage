@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xinyi Si · Personal Homepage</title>
+    <style>
+        /* ---------- 全局重置 & 基础 ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                "Helvetica Neue", Arial, sans-serif;
+            background-color: #fafafa;
+            color: #222;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 2.5rem 2.8rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        /* ---------- 头像 ---------- */
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.8rem;
+        }
+
+        .profile img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #eaeaea;
+        }
+
+        .profile h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        /* ---------- 正文排版 ---------- */
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.3rem;
+        }
+
+        p {
+            margin-bottom: 0.8rem;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ---------- 联系方式 ---------- */
+        .contact {
+            background: #f8f9fa;
+            padding: 1rem 1.4rem;
+            border-radius: 8px;
+            margin: 1rem 0 1.2rem 0;
+            list-style: none;
+        }
+
+        .contact li {
+            margin-bottom: 0.2rem;
+        }
+
+        .contact li:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact strong {
+            font-weight: 600;
+            color: #111;
+        }
+
+        /* ---------- 论文列表 ---------- */
+        .papers {
+            list-style: none;
+            padding: 0;
+        }
+
+        .papers li {
+            margin-bottom: 1rem;
+            padding-left: 0.2rem;
+        }
+
+        .papers .title {
+            font-weight: 600;
+        }
+
+        .papers .authors {
+            font-style: italic;
+            color: #444;
+        }
+
+        .papers .venue {
+            color: #555;
+        }
+
+        .papers .links a {
+            margin-right: 0.8rem;
+            font-size: 0.92rem;
+        }
+
+        /* ---------- 响应式 ---------- */
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem 1.2rem;
+            }
+            .profile {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .profile img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ============================================================
+    1. 头像 + 姓名
+    ============================================================ -->
+    <div class="profile">
+        <!-- ★ 替换 image1.jpg 为你的实际照片文件名 -->
+        <img src="image1.jpg" alt="Xinyi Si" />
+        <h1>Xinyi Si</h1>
+    </div>
+
+    <!-- ============================================================
+    2. 简介
+    ============================================================ -->
+    <p>
+        I am <strong>Xinyi Si</strong>, a PhD candidate in the integrated Master–PhD program at the School of Mathematical Sciences, Beihang University (China).
+        I am supervised by Professor <strong>Xiaoxian Tang</strong>.
+        My current research focuses primarily on <strong>mathematical biology</strong>.
+    </p>
+
+    <!-- ============================================================
+    3. 联系方式
+    ============================================================ -->
+    <ul class="contact">
+        <li><strong>Email:</strong> <a href="mailto:sta_sxy@buaa.edu.cn">sta_sxy@buaa.edu.cn</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Cynthia-091225" target="_blank">github.com/Cynthia-091225</a></li>
+    </ul>
+
+    <!-- ============================================================
+    4. 论文列表
+    ============================================================ -->
+    <h2>Papers</h2>
+    <ul class="papers">
+
+        <!-- ★ 模板：复制此 <li> 块，替换为你的论文信息 -->
+        <li>
+            <span class="title">Obstruction of Absolute Concentration Robustness by Conservation Laws in Non-Redundant Zero-One Networks</span><br />
+            <span class="authors">Xinyi Si, Xiaoxian Tang</span><br />
+            <span class="links">
+                <a href="https://arxiv.org/abs/2604.14592" target="_blank">arXiv:	arXiv:2604.14592</a>
+                </span>
+        </li>
+
+        <!-- 可以继续添加更多论文，复制上面的 <li> 块即可 -->
+        <!--<li>
+            <span class="title">Obstruction of Absolute Concentration Robustness by Conservation Laws in Non-Redundant Zero-One Networks</span><br />
+            <span class="authors">Xinyi Si, Xiaoxian Tang</span><br />
+            <span class="venue">Journal Name or Conference, Year</span><br />
+            <span class="links">
+                <a href="https://arxiv.org/abs/2604.14592" target="_blank">arXiv:	arXiv:2604.14592</a>
+                <a href="https://doi.org/10.xxxx/xxxxx" target="_blank">DOI</a>
+                <a href="https://github.com/xxx/xxx" target="_blank">Code</a>
+            </span>
+        </li>-->
+
+    </ul>
+
+</div>
+
+</body>
+</html>
